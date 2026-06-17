@@ -103,3 +103,4 @@ console.log(fruits)
 //adding "kiwi" as the first element of fruits array
 fruits.unshift("kiwi")
 console.log(fruits)
+console.log(fruits)
