@@ -1,0 +1,57 @@
+/* JobList.css — copied from .job-section / .job-grid / .section-heading rules */
+
+.job-section { padding: var(--space-9) 0; }
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-7);
+  gap: var(--space-4);
+}
+
+.section-heading__title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-2);
+}
+
+.section-heading__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+}
+
+.section-heading__link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.job-list__empty {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-8) 0;
+}
+
+@media (max-width: 1024px) {
+  .job-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .job-section { padding: var(--space-7) 0; }
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+  }
+  .job-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+}
